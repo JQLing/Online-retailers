@@ -1,0 +1,21 @@
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,p,div,img,form,input,fieldset,table,td,dl,dt,dd{padding: 0;margin: 0;}
+body{font-size: 12px;
+    background: #f7f7f7;
+}
+img{border:none;}
+li{list-style: none}
+input,select,textarea{outline:none;border: none;}
+textarea{resize: none;}
+a{text-decoration: none;}
+
+/*清除浮动*/
+.clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    zoom:1;
+}

@@ -1,0 +1,289 @@
+.cart{
+	margin-left: 200px;
+}
+.all_shops{
+	position: relative;
+	height: 40px;
+}
+.all_shops_title{
+	display: block;
+	width: 120px;
+	padding-left: 10px;
+	border-bottom: 2px solid #ff4400;
+	line-height: 40px;
+	font-size: 16px;
+	color: #ff4400;
+	font-weight: 700;
+}
+.all_shops_amount{
+	position: absolute;
+	top:1px;
+	left: 80px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.cart_table_th{
+	width: 1170px;
+	height: 18px;
+	margin: 20px 0 30px 10px;
+	font-size: 14px;
+}
+.select_all{
+	width: 120px;
+	height: 16px;
+	margin-top: 3px;
+}
+.cart_all_checkbox,.cart_checkbox{
+	position: relative;
+	width: 16px;
+	height: 16px;
+}
+.checkboxShop{
+	display: none;
+	position: absolute;
+	left: -20px;
+	top: -16px;
+}
+.cart_all_checkbox label,.cart_checkbox label{
+	position: relative;
+	float: left;
+	width: 15px;
+	height: 15px;
+	background: url(../images/cart/checkbox.png) no-repeat;
+	background-position: 0 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+.cart_checkbox_checked label{
+	background-position: 0 -20px;
+}
+.select_all_txt{
+	width: 40px;
+	height: 14px;
+	line-height: 14px;
+}
+.th_info{
+	width: 514px;
+}
+.th_price{
+	width: 126px;
+}
+.th_amount{
+	width: 110px;
+}
+.th_sum{
+	width: 170px;
+}
+.th_op{
+	width: 130px;
+}
+.cart_shop_list{
+	width: 1226px;
+}
+.cart_shop_item{
+	width: 1226px;
+	margin-bottom: 20px;
+}
+.shop_checkbox{
+	width: 200px;
+	margin-bottom: 10px;
+}
+.shopname_txt{
+	display: block;
+	width: 100px;
+	color: #000000;
+}
+.shopname_txt:hover{
+	color: #ff4400;
+	text-decoration: underline;
+}
+.cart_goods_list{
+	width: 1226px;
+	clear: both;
+}
+.cart_goods_item{
+	width: 1200px;
+	height: 78px;
+	padding:  20px 0px 20px 24px;
+	border: 1px solid #e6e6e6;
+	background-color: #fcfcfc;
+}
+.cart_goods_info{
+	width: 1200px;
+}
+.cart_goods_checkbox{
+	width: 20px;
+	height: 16px;
+}
+.cart_good_details{
+	width: 1200px;
+}
+.cart_good_pic{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #eeeeee;
+}
+.cart_good_pic img{
+	width: 80px;
+	height: 80px;
+}
+.cart_good_title{
+	width: 220px;
+	margin-left: 9px;
+	color: #3c3c3c;
+	line-height: 18px;
+}
+.cart_good_title:hover{
+	color: #ff4400;
+	text-decoration: underline;
+}
+.cart_good_model{
+	position: relative;
+	width: 170px;
+	height: 118px;
+	margin: -20px 36px 0;
+}
+.cart_good_props{
+	display: block;
+	width: 155px;
+	height: 98px;
+	padding: 20px 0 0 15px;
+	color: #9c9c9c;
+}
+.cart_good_props:hover{
+	width: 153px;
+	height: 96px;
+	padding: 19px 0 0 14px;
+	border: 1px dashed #ff4400;
+}
+.cart_good_props p{
+	margin-bottom: 4px;
+}
+.cart_shop_revise{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 32px;
+	height: 20px;
+	background-color: #ff4400;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+}
+.hide{
+	display: none;
+}
+.cart_shop_price{
+	margin-left: 38px;
+	font-family: Verdana,Tahoma,arial;
+	font-weight: 700;
+}
+.cart_tb_rmb{
+	font-style: normal;
+}
+.item_amount{
+	width: 75px;
+	height: 24px;
+	margin-left: 62px;
+}
+.cart_shopdecrease,.cart_shopincrease,.cart_reduce{
+	display: block;
+	width: 16px;
+	height: 22px;
+	border: 1px solid #e5e5e5;
+	background-color: #f0f0f0;
+	text-align: center;
+	line-height: 20px;
+}
+.cart_shopdecrease{
+	color: #e5e5e5;
+}
+.cart_reduce{
+}
+.cart_shopincrease:hover,.cart_reduce:hover{
+	border: 1px solid #ff4400;
+}
+.text_amount{
+	width: 37px;
+	height: 22px;
+	border: 1px solid #aaaaaa;
+	background-color: #fff;
+	text-align: center;
+	line-height: 20px;
+	
+}
+.cart_shop_sum{
+	width: 120px;
+	margin-left: 43px;
+	color: #ff4400;
+	font-family: Verdana,Tahoma,arial;
+	font-weight: 700;
+}
+.sum_tb_rmb{
+	font-style: normal;
+}
+.cart_shop_op{
+	width: 60px;
+	margin-left: 52px;
+}
+.movetofav,.delete{
+	display: block;
+	margin-bottom: 6px;
+	color: #3c3c3c;
+}
+.movetofav:hover,.delete:hover{
+	color: #ff4400;
+	text-decoration: underline;
+}
+.cart_balance{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 1226px;
+	height: 59px;
+	border-bottom: 1px solid #dadada;
+	margin-left: 200px;
+	background-color: #e5e5e5;
+	line-height: 59px;
+	color: #000000;
+}
+.bottom_select_all{
+	margin: 24px 0 0 14px;
+}
+.has_choose{
+	width: 110px;
+	margin-left: 660px;
+}
+.has_choose_num,.sum_num{
+	margin-top: 40px;
+	color: #ff4400;
+	font-size: 16px;
+	font-family: Verdana,Tahoma,arial;
+	font-weight: 700;
+}
+.has_choose_sum{
+	width: 260px;
+}
+.sum_balance{
+	width: 124px;
+	background-color: #b0b0b0;
+	text-align: center;
+}
+.sum_balance_txt{
+	display: block;
+	width: 124px;
+	height: 59px;
+	color: #fff;
+	font-size: 18px;
+	
+}
+
+
+
+
+
+
+
+
+

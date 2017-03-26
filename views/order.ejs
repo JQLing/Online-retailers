@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物网-确认订单</title>
+	<link rel="stylesheet" href="css/reset.css" style="text/css">
+    <link rel="stylesheet" href="css/common.css" style="text/css">
+	<link rel="stylesheet" href="css/order.css" style="text/css">
+</head>
+<body>
+	<ul class="order_info clearfix">
+		<li class="order address">
+			<label for="address_cont" class="fl">收货地址</label>
+			<input type="text" class="address_cont" id="address_cont" placeholder="请填写您的收货地址" name="address" required="required">
+		</li>
+		<li class="order clearfix">
+			<p class="dispatching fl">配送方式</p>
+			<a href="javascript:void(0);" class="dispatching_way fl">快递 免邮 > </a>
+		</li>
+		<li class="order clearfix">
+			<p class="freight fl">运费险</p>
+			<p class="freight_text fl">卖家赠送，若确认收货前退货，可获保险赔付</p>
+		</li>
+		<li class="order clearfix">
+			<p class="payment fl">支付方式</p>
+			<p class="payment_cont fl">在线支付（支持支付宝、京东钱包、微信支付）</p>
+		</li>
+		<li class="order message">
+			<label for="message_cont" class="fl">买家留言</label>
+			<textarea class="message_cont" id="message_cont" maxlength="300" name="message"></textarea>
+		</li>
+		<li class="order">
+			<label for="annoymous_cont" class="annoymous">匿名购买</label>
+			<input type="radio" class="annoymous_cont fr" id="annoymous_cont" name="annoymous" value="annoymous" checked="checked">
+		</li>
+		<li class="order order_sum">
+			<ul class="order_list fr">
+				<li class="clearfix"><p class="title">商品件数：</p><p class="title_con fr">1件</p></li>
+				<li class="clearfix"><p class="title">金额合计：</p><p class="title_con fr">2200元</p></li>
+				<li class="clearfix"><p class="title">活动优惠：</p><p class="title_con fr">-0元</p></li>
+				<li class="clearfix"><p class="title">优惠券抵扣：</p><p class="title_con fr">-0元</p></li>
+				<li class="clearfix"><p class="title">运费：</p><p class="title_con fr">-0元</p></li>
+				<li class="clearfix"><p class="title ">应付总额：</p><p class="title_con pay fr">2200元</p></li>
+			</ul>
+		</li>
+		<li class="order order_pay">
+			<a href="javascript:void(0);" class="toPay fr">去付款</a>
+		</li>
+	</ul>
+	
+</body>
+</html>

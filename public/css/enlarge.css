@@ -1,0 +1,48 @@
+*{margin: 0;padding: 0;}
+#show_bigger_pic{
+	position: absolute;
+	width: 880px;
+	height: 430px;
+	top:100px;
+	left: 100px;
+}
+.small_pic_div{               /*小图区*/
+	position: relative;
+	float: left;
+	width: 430px;
+	height: 430px;
+	border: 1px solid #ccc;
+}
+.big_pic_div{               /*大图区*/
+	float: left;
+	width: 430px;
+	height: 430px;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+	display: none;
+	overflow: hidden;
+}
+.big_pic_div img{
+	position: relative;
+	width: 1720px;
+	height: 1720px;
+}
+.cover{
+	position: absolute;
+	top:0;left: 0;      /*绝对定位不指定 left,top 在FireFox下 会产生错误*/
+	width: 430px;
+	height: 430px;
+	border: 1px solid #ccc;
+	z-index: 2;
+}                                                                                  
+.float_span{
+	position: absolute;
+	top:0;left: 0;      
+	width: 120px;
+	height: 120px;
+	border: 1px solid #40e0d0;
+	background: #b2dfee;
+	opacity: 0.5;
+	display: none;
+	z-index: 1;
+}

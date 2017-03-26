@@ -1,0 +1,93 @@
+body{
+	background: url() no-repeat;
+}
+.login{
+	width: 302px;
+	height: 296px;
+	padding: 27px 24px;
+	margin: 0 auto;
+	background-color: #f4e7fc;
+}
+.login_title{
+	margin: 10px 0 30px;
+	font-size: 16px;
+	color: #3c3c3c;
+	font-weight: 700;
+}
+.login_form{
+	
+}
+.field_username,.field_pwd{
+	width: 298px;
+	height: 40px;
+	border: 1px solid #dddddd;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+.username_logo,.pwd_logo{
+	width: 40px;
+	height: 40px;
+	background:url(../images/login/logo.png) no-repeat 0 0;
+}
+.pwd_logo{
+	background-position: 0 -40px;
+}
+.login_text{
+	display: block;
+	width: 238px;
+	height: 20px;
+	padding: 10px;
+	background-color: #fff;
+}
+.login_btn{
+	width: 300px;
+	height: 42px;
+	margin-bottom: 23px;
+}
+.login_submit{
+	display: block;
+	width: 300px;
+	height: 42px;
+	background-color: #ff4400;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 42px;
+	cursor: pointer;
+}
+.login_submit:hover{
+	background-color: #f52b00;
+}
+.login_ways{
+	margin-bottom: 16px;
+}
+.login_ways_item1,.login_ways_item2{
+	float: left;
+	margin-right: 24px;
+	background: url(../images/login/logo.png) no-repeat;
+}
+.login_ways_item1{
+	background-position: -40px 0;
+}
+.login_ways_item2{
+	background-position: -40px -17px;
+}
+.login_ways_txt{
+	margin-left: 20px;
+	color: #6c6c6c;
+}
+.login_ways_txt:hover{
+	color: #ff4400;
+	text-decoration: underline;
+}
+.login_link{
+	padding-left: 180px;
+}
+.forgot_passwod,.free_register{
+	color: #6c6c6c;
+	margin-right: 11px;
+}
+.forgot_passwod:hover,.free_register:hover{
+	color: #ff4400;
+	text-decoration: underline;
+}

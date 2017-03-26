@@ -1,0 +1,102 @@
+.order_info{
+	width: 1220px;
+	background-color: #fff;
+	padding: 26px 50px;
+	margin-left: 140px;
+	font-size: 14px;
+	color: #656565;
+}
+.order{
+	position: relative;
+	width: 1120px;
+	height: 70px;
+	border-bottom: 1px solid #e0e0e0;
+	line-height: 70px;
+}
+.order label,.dispatching,.freight,.payment{
+	display: block;
+	width: 80px;
+	margin-right: 54px;
+	color: #333333;
+	font-size: 18px;
+}
+.address{
+	padding-bottom: 20px;
+}
+.address_cont{
+	width: 490px;
+	height: 48px;
+	padding-left: 8px;
+	border: 1px solid #e0e0e0;
+	line-height: 48px;
+	color: #919191;
+	font-size: 12px;
+}
+.dispatching_way,.payment_cont{
+	color: #ff7d00;
+}
+.annoymous{
+	position: absolute;
+	top: 0;
+	right: -30px;
+}
+.annoymous_cont{
+	margin-top: 30px;
+}
+.message{
+	padding: 20px 0;
+}
+.message_cont{
+	width: 484px;
+	height: 44px;
+	padding: 6px;
+	margin-top: 6px;
+	border: 1px solid #e0e0e0;
+	color: #656565;
+	font-family: "Microsoft YaHei","微软雅黑";
+}
+.order_sum{
+	height: 260px;
+	margin-top: 20px;
+}
+.order_list{
+	width:260px;
+}
+.order_sum li{
+	position: relative;
+	width: 260px;
+	height: 40px;
+	line-height: 40px;
+}
+.title{
+	position: absolute;
+	top:0px;
+	right: 160px;
+}
+.title_con{
+	color: #ff8200;
+	font-style: italic;
+}
+.pay{
+	font-size: 32px;
+	color: #ff6700;
+}
+.order_pay{
+	border-bottom: none;
+}
+.toPay{
+	width: 160px;
+	height: 40px;
+	margin-top: 15px;
+	background-color: #ff6700;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+}
+
+
+
+
+
+
+

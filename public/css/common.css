@@ -1,0 +1,16 @@
+.comWidth{
+    width: 1000px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

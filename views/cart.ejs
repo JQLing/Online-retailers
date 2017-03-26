@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物网-购物车</title>
+    <link rel="stylesheet" href="css/reset.css" style="text/css">
+    <link rel="stylesheet" href="css/common.css" style="text/css">
+    <link rel="stylesheet" href="css/cart.css" style="text/css">
+</head>
+<body>
+	<div class="cart">
+		<div class="all_shops">
+			<a class="all_shops_title" href="#">全部商品
+				<span class="all_shops_amount">3</span>
+			</a>
+		</div>
+		<div class="cart_table_th clearfix">
+			<div class="select_all fl clearfix">
+				<div class="cart_all_checkbox fl">
+					<input class="checkboxShop" id="selectAll" type="checkbox" name="select_all">
+					<label for="selectAll" class="all"></label>
+				</div>
+				<p class="select_all_txt fl">&nbsp;&nbsp;全选</p>
+			</div>
+			<div class="th_info fl">商品信息</div>
+			<div class="th_price fl">单价</div>
+			<div class="th_amount fl">数量</div>
+			<div class="th_sum fl">金额</div>
+			<div class="th_op fl">操作</div>
+		</div>
+		<ul class="cart_shop_list">
+			<li class="cart_shop_item">
+				<div class="shop_checkbox fl clearfix">
+					<div class="cart_checkbox fl">
+						<input class="checkboxShop" id="selectAll" type="checkbox" name="select_all">
+						<label for="selectAll"></label>
+					</div>
+					<p class="cart_shop_name fl">&nbsp;&nbsp;店铺：<a href="#" class="shopname_txt fr">百雀羚旗舰店</a></p>
+				</div>
+				<ul class="cart_goods_list">
+					<li class="cart_goods_item clearfix">
+						<div class="cart_goods_info fl clearfix">
+							<div class="cart_checkbox cart_goods_checkbox fl">
+								<input class="checkboxShop" id="selectAll" type="checkbox" name="select_all">
+								<label for="selectAll"></label>
+							</div>
+							<div class="cart_good_details  clearfix">
+								<a href="#" class="cart_good_pic fl">
+									<img src="images/cart/good1.jpg" alt="百雀羚面膜">
+								</a>
+								<a class="cart_good_title fl" href="#" title="百雀羚水嫩精纯清滢弹润面膜女 5片装 补水保湿提亮肤色收缩毛孔">百雀羚水嫩精纯清滢弹润面膜女 5片装 补水保湿提亮肤色收缩毛孔</a>
+								<div class="cart_good_model fl">
+									<a class="cart_good_props" href="#">
+										<p>化妆品净含量：5片</p>
+										<a class="cart_shop_revise hide" href="#">修改</a>
+									</a>
+								</div>
+								
+								<p class="cart_shop_price fl">
+									<i class="cart_tb_rmb">¥ </i><span>100.00 </span>
+								</p>
+								<div class="item_amount fl clearfix">
+									<a href="#" class="cart_shopdecrease fl" id="decrease">-</a>
+									<input class="text_amount" type="text" value="1">
+									<a href="#" class="cart_shopincrease fr" id="increase">+</a>
+								</div>
+								<p class="cart_shop_sum fl">
+									<i class="sum_tb_rmb">¥ </i><span>100.00 </span> 
+								</p>
+								<div class="cart_shop_op fl">
+									<a href="#" class="movetofav">移入收藏夹</a>
+									<a href="#" class="delete">删除</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li class="cart_shop_item">
+				<div class="shop_checkbox fl clearfix">
+					<div class="cart_checkbox fl">
+						<input class="checkboxShop" id="selectAll" type="checkbox" name="select_all">
+						<label for="selectAll"></label>
+					</div>
+					<p class="cart_shop_name fl">&nbsp;&nbsp;店铺：<a href="#" class="shopname_txt fr">arar旗舰店</a></p>
+				</div>
+				<ul class="cart_goods_list">
+					<li class="cart_goods_item clearfix">
+						<div class="cart_goods_info fl clearfix">
+							<div class="cart_checkbox cart_goods_checkbox fl">
+								<input class="checkboxShop" id="selectAll" type="checkbox" name="select_all">
+								<label for="selectAll"></label>
+							</div>
+							<div class="cart_good_details  clearfix">
+								<a href="#" class="cart_good_pic fl">
+									<img src="images/cart/good2.jpg" alt="毛呢连衣裙">
+								</a>
+								<a class="cart_good_title fl" href="#" title="ATAR2016秋季新款女装小香风毛呢连衣裙 羊毛呢百搭修身打底裙子">ATAR2016秋季新款女装小香风毛呢连衣裙 羊毛呢百搭修身打底裙子</a>
+								<div class="cart_good_model fl">
+									<a class="cart_good_props" href="#">
+										<p>颜色分类：粉色（加绒）</p>
+										<p>尺码：S</p>
+										<a class="cart_shop_revise hide" href="#">修改</a>
+									</a>
+								</div>
+								
+								<p class="cart_shop_price fl">
+									<i class="cart_tb_rmb">¥ </i><span>139.00</span> 
+								</p>
+								<div class="item_amount fl clearfix">
+									<a href="#" class="cart_reduce fl" id="increase">-</a>
+									<input class="text_amount" type="text" value="1">
+									<a href="#" class="cart_shopincrease fr" id="increase">+</a>
+								</div>
+								<p class="cart_shop_sum fl">
+									<i class="sum_tb_rmb">¥ </i><span>139.00 </span>
+								</p>
+								<div class="cart_shop_op fl">
+									<a href="#" class="movetofav">移入收藏夹</a>
+									<a href="#" class="delete">删除</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li class="cart_shop_item">
+				<div class="shop_checkbox fl clearfix">
+					<div class="cart_checkbox fl">
+						<input class="checkboxShop" id="selectAll" type="checkbox" name="select_all">
+						<label for="selectAll"></label>
+					</div>
+					<p class="cart_shop_name fl">&nbsp;&nbsp;店铺：<a href="#" class="shopname_txt fr">瑞博旗舰店</a></p>
+				</div>
+				<ul class="cart_goods_list">
+					<li class="cart_goods_item clearfix">
+						<div class="cart_goods_info fl clearfix">
+							<div class="cart_checkbox cart_goods_checkbox fl">
+								<input class="checkboxShop" id="selectAll" type="checkbox" name="select_all">
+								<label for="selectAll"></label>
+							</div>
+							<div class="cart_good_details  clearfix">
+								<a href="#" class="cart_good_pic fl">
+									<img src="images/cart/good3.jpg" alt="泰迪熊毛绒玩具">
+								</a>
+								<a class="cart_good_title fl" href="#" title="泰迪熊毛绒玩具1.6抱抱熊女生熊布娃娃情人节礼物送女友熊猫公仔">泰迪熊毛绒玩具1.6抱抱熊女生熊布娃娃情人节礼物送女友熊猫公仔</a>
+								<div class="cart_good_model fl">
+									<a class="cart_good_props" href="#">
+										<p>颜色分类：米黄色</p>
+										<p>高度：1.6米（送神秘礼物+香袋）</p>
+										<a class="cart_shop_revise hide" href="#">修改</a>
+									</a>
+								</div>
+								
+								<p class="cart_shop_price fl">
+									<i class="cart_tb_rmb">¥ </i><span>198.00</span>
+								</p>
+								<div class="item_amount fl clearfix">
+									<a href="#" class="cart_shopdecrease fl" id="increase">-</a>
+									<input class="text_amount" type="text" value="1">
+									<a href="#" class="cart_shopincrease fr" id="increase">+</a>
+								</div>
+								<p class="cart_shop_sum fl">
+									<i class="sum_tb_rmb">¥ </i><span>198.00</span> 
+								</p>
+								<div class="cart_shop_op fl">
+									<a href="#" class="movetofav">移入收藏夹</a>
+									<a href="#" class="delete">删除</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<% for(var i in carts){ if(!carts[i].cId) continue %>
+				<li class="cart_shop_item">
+					<div class="shop_checkbox fl clearfix">
+						<div class="cart_checkbox fl">
+							<input class="checkboxShop" id="selectAll" type="checkbox" name="select_all">
+							<label for="selectAll"></label>
+						</div>
+						<p class="cart_shop_name fl">&nbsp;&nbsp;店铺：<a href="#" class="shopname_txt fr"><%= carts[i].cShopName %></a></p>
+					</div>
+					<ul class="cart_goods_list">
+						<li class="cart_goods_item clearfix">
+							<div class="cart_goods_info fl clearfix">
+								<div class="cart_checkbox cart_goods_checkbox fl">
+									<input class="checkboxShop" id="selectAll" type="checkbox" name="select_all">
+									<label for="selectAll"></label>
+								</div>
+								<div class="cart_good_details  clearfix">
+									<a href="#" class="cart_good_pic fl">
+										<img src="<%= carts[i].cImgSrc %>">
+									</a>
+									<a class="cart_good_title fl" href="#" title="<%= carts[i].cName %>"><%= carts[i].cName %></a>
+									<div class="cart_good_model fl">
+										<a class="cart_good_props" href="#">
+											<p>颜色分类：<%= carts[i].cColor</p>
+											<p>尺码：<%= carts[i].cSize %></p>
+											<a class="cart_shop_revise hide" href="#">修改</a>
+										</a>
+									</div>
+
+									<p class="cart_shop_price fl">
+										<i class="cart_tb_rmb">¥ </i>
+										<span><%= carts[i].cPrice %></span>
+									</p>
+									<div class="item_amount fl clearfix">
+										<a href="#" class="cart_shopdecrease fl" id="decrease">-</a>
+										<input class="text_amount" type="text" value="1">
+										<a href="#" class="cart_shopincrease fr" id="increase">+</a>
+									</div>
+									<p class="cart_shop_sum fl">
+										<i class="sum_tb_rmb">¥ </i>
+										<span></span>
+									</p>
+									<div class="cart_shop_op fl">
+										<a href="#" class="movetofav">移入收藏夹</a>
+										<a href="#" class="delete">删除</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			<% } %>
+			
+		</ul>
+		<div class="cart_balance clearfix">
+			<div class="bottom_select_all fl clearfix">
+					<div class="cart_all_checkbox fl">
+						<input class="checkboxShop" id="selectAll" type="checkbox" name="select_all">
+						<label for="selectAll" class="all"></label>
+					</div>
+					<p class="select_all_txt fl">&nbsp;&nbsp;全选</p>
+				</div>
+			<p class="has_choose fl">已选商品
+				<strong class="has_choose_num">0 </strong>件
+			</p>
+			<p class="has_choose_sum fl">合计（不含运费）：
+				<strong class="sum_num">0.00 </strong>
+			</p>
+			<div class="sum_balance fl">
+				<a href="./order" class="sum_balance_txt">结算</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>	
+	<script src="js/cart.js"></script>	
+</body>
+</html>

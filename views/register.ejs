@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+	<link rel="stylesheet" href="css/reset.css" style="text/css">
+    <link rel="stylesheet" href="css/common.css" style="text/css">
+    <link rel="stylesheet" href="css/register.css" style="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="register">
+		<%- message %>
+		<div class="register_title">
+			用户注册
+		</div>
+		<form class="register_form">
+			<div class="register_username clearfix">
+				<label for="username" class="username_txt fl">会员名</label>
+				<input type="text" name="username" id="username" class="register_text fl" placeholder="会员名/邮箱/手机号" maxlength="32">
+			</div>
+			<div class="register_pwd clearfix">
+				<label for="password" class="pwd_txt fl">密码</label>
+				<input type="password" name="password" id="password" class="register_text fl" maxlength="40">
+			</div>
+			<div class="register_pwd clearfix">
+				<label for="password" class="pwd_txt fl">确认密码</label>
+				<input type="password" name="enter_password" id="enter_password" class="register_text fl" maxlength="40">
+			</div>
+			<div class="agreement">
+				<input type="checkbox" name="agreement" checked>
+				<span>我已阅读并同意</span>
+				<a href="#" class="agreement_book">《 用户注册协议 》</a>
+			</div>
+			<div class="register_btn">
+					<input type="submit" value="注册" class="register_submit" id="register_submit">
+			</div>
+		</form>
+	  
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.register{
+	width: 302px;
+	height: 396px;
+	padding: 27px 24px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.register_title{
+	margin: 10px 0 30px;
+	font-size: 16px;
+	color: #3c3c3c;
+	font-weight: 700;
+}
+.register_form{
+	width: px;
+}
+.register_username,.register_pwd{
+	width: 298px;
+	height: 40px;
+	
+	margin-bottom: 20px;
+}
+.username_txt,.pwd_txt{
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.register_text{
+	display: block;
+	width: 216px;
+	height: 38px;
+	padding: 10px;
+	border: 1px solid #dddddd;
+	background-color: #fff;
+	font-size: 12px;
+}
+.agreement{
+	width: 280px;
+	margin: 46px 0 20px 30px;
+}
+.agreement_book{
+}
+.register_btn{
+	width: 300px;
+	height: 42px;
+	margin-bottom: 23px;
+}
+.register_submit{
+	display: block;
+	width: 300px;
+	height: 42px;
+	background-color: #ff4400;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 42px;
+	cursor: pointer;
+}
+.register_submit:hover{
+	background-color: #f52b00;
+}

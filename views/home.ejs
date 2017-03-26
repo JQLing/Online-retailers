@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="images/shopping.icon" style="icon">
+    <link rel="stylesheet" href="css/reset.css" style="text/css">
+    <link rel="stylesheet" href="css/common.css" style="text/css">
+    <link rel="stylesheet" href="css/style.css" style="text/css">
+    <title>购物网 - 综合网上购物商城</title>
+</head>
+<body>
+    <%- include common/homeHeader %>
+    <%- include common/nav %>
+    
+<!--    首屏开始-->
+    <div class="first_screen comWidth clearfix">
+<!--       轮播图-->
+        <div id="carousel" class="fl">
+            <ul id="slider" class="clearfix">
+                <li><a href="#"><img src="images/carousel/carousel1.jpg" alt="carousel1"></a></li>
+                <li><a href="#"><img src="images/carousel/carousel2.jpg" alt="carousel2"></a></li>
+                <li><a href="#"><img src="images/carousel/carousel3.jpg" alt="carousel3"></a></li>
+                <li><a href="#"><img src="images/carousel/carousel4.jpg" alt="carousel4"></a></li>
+                <li><a href="#"><img src="images/carousel/carousel5.jpg" alt="carousel5"></a></li>
+                <li><a href="#"><img src="images/carousel/carousel6.jpg" alt="carousel6"></a></li>
+            </ul>
+            <div id="showNum">
+                <a href="javascript:;" class="page_item active">1</a>
+                <a href="javascript:;" class="page_item">2</a>
+                <a href="javascript:;" class="page_item">3</a>
+                <a href="javascript:;" class="page_item">4</a>
+                <a href="javascript:;" class="page_item">5</a>
+                <a href="javascript:;" class="page_item">6</a>
+            </div>
+        </div>
+<!--        用户面板-->
+        <div class="user_pannel fr">
+            <%- include page/userBar %>
+            <div class="news">
+                <ul class="news_title ">
+                    <li class="title_list active"><a href="#">头条</a></li>
+                    <li class="title_list"><a href="#">公告</a></li>
+                    <li class="title_list"><a href="#">足球</a></li>
+                </ul>
+                <div class="new_list">
+                    <ul class="new new_list1">
+                        <li><a class="active" href="#">[震撼] SurfacePro5即将发布</a></li>
+                        <li><a href="#">[惊呆] 中国彩礼地图 娶不起</a></li>
+                        <li><a href="#">[曝光] 三星S8屏幕效果震撼</a></li>
+                        <li><a href="#">[喜庆] iPhone7Plus中国红曝光</a></li>
+                    </ul>
+                    <ul class="new new_list2">
+                        <li><a class="active" href="#">[促销] 笔记本每1000减100</a></li>
+                        <li><a href="#">[促销]手机6折起 爆款9.9元秒</a></li>
+                        <li><a href="#">[促销]冰洗下单最高直降1500</a></li>
+                        <li><a href="#">[调研]苏宁易购频道页有奖调研</a></li>
+                    </ul>
+                    <ul class="new new_list3">
+                        <li><a href="#">[球票]3.1苏宁主场球票开售</a></li>
+                        <li><a href="#">[青训]少儿足球春季班报名</a></li>
+                        <li><a href="#">[促销]开学季50元券限量抢</a></li>
+                        <li><a href="#">[促销]运动大牌3折起</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <ul class="boot clearfix">
+                <li class="newHand"><a href="#">新人专区</a></li>
+                <li><a href="#">买家保障</a></li>
+            </ul>
+        </div>
+    </div>
+<!--    首屏结束-->
+
+<!--   活动专区-->
+    <%- include common/activities %>
+<!--   活动专区结束-->
+   
+    <%- include common/footer %>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
