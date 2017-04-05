@@ -5,9 +5,11 @@
 	<title>商品详情</title>
 	<link rel="stylesheet" href="css/reset.css" style="text/css">
     <link rel="stylesheet" href="css/common.css" style="text/css">
+    <link rel="stylesheet" href="css/style.css" style="text/css">
     <link rel="stylesheet" href="css/details.css" style="text/css">
 </head>
 <body>
+	<%- include common/header %>
 	<div class="details_shop_nav">
 		<div class="nav_box clearfix">
 			<a href="./home" class="logo fl">购物网<p>gouwu.com</p></a>
@@ -240,7 +242,7 @@
 							<span class="stock fl">库存429件</span>
 						</div>
 						<div class="buyGood">
-							<a href="#" class="buyNow" id="buyNow">立即购买</a>
+							<a href="javascript:void(0);" class="buyNow" id="buyNow" >立即购买</a>
 							<a href="javascript:void(0);" class="shopingCart" id="shopingCart">加入购物车</a>
 						</div>
 					</div>
@@ -617,5 +619,6 @@
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/details.js"></script>
+	
 </body>
 </html>

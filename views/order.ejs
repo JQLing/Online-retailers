@@ -5,9 +5,11 @@
 	<title>购物网-确认订单</title>
 	<link rel="stylesheet" href="css/reset.css" style="text/css">
     <link rel="stylesheet" href="css/common.css" style="text/css">
+    <link rel="stylesheet" href="css/style.css" style="text/css">
 	<link rel="stylesheet" href="css/order.css" style="text/css">
 </head>
 <body>
+	<%- include common/header %>
 	<ul class="order_info clearfix">
 		<li class="order address">
 			<label for="address_cont" class="fl">收货地址</label>
@@ -35,18 +37,17 @@
 		</li>
 		<li class="order order_sum">
 			<ul class="order_list fr">
-				<li class="clearfix"><p class="title">商品件数：</p><p class="title_con fr">1件</p></li>
-				<li class="clearfix"><p class="title">金额合计：</p><p class="title_con fr">2200元</p></li>
+				<li class="clearfix"><p class="title">商品件数：</p><p class="title_con fr"><%= goodNum %>件</p></li>
+				<li class="clearfix"><p class="title">金额合计：</p><p class="title_con fr"><%= sum %>元</p></li>
 				<li class="clearfix"><p class="title">活动优惠：</p><p class="title_con fr">-0元</p></li>
 				<li class="clearfix"><p class="title">优惠券抵扣：</p><p class="title_con fr">-0元</p></li>
 				<li class="clearfix"><p class="title">运费：</p><p class="title_con fr">-0元</p></li>
-				<li class="clearfix"><p class="title ">应付总额：</p><p class="title_con pay fr">2200元</p></li>
+				<li class="clearfix"><p class="title ">应付总额：</p><p class="title_con pay fr"><%= sum %>元</p></li>
 			</ul>
 		</li>
 		<li class="order order_pay">
 			<a href="javascript:void(0);" class="toPay fr">去付款</a>
 		</li>
 	</ul>
-	
 </body>
 </html>

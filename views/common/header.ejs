@@ -4,15 +4,27 @@
 	</a>
 	<div class="bar">
 		<div class="comWidth clearfix">
-			<div class="fl">
+			<div class="other_info fl">
 				<a href="#">网站导航</a>
 				<a href="#">商家入驻</a>
+				<% if(!user){ %>
+				<a href="../index">首页</a>
+				<% }else{ %>
+				<a href="../home">首页</a>
+				<% } %>
 			</div>
 			<div class="personInfo fr">
+			<% if(!user){ %>
 				<a class="active" href="../login">登录</a>
 				<a href="../register">注册</a>
 				<a class="cart" href="#">购物车</a>
 				<a href="#">我的订单</a>
+			<%  }else{ %>
+				<a class="active" href="#"><%= user.name %></a>
+				<a href="#">消息</a>
+				<a class="cart" href="../cart">购物车</a>
+				<a href="/logout">退出</a>
+			<%  } %>
 			</div>
 		</div>
 	</div>

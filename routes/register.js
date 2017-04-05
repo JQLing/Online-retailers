@@ -20,7 +20,6 @@ module.exports = function(app){
 				},function(error,doc){
 					if(error){
 						res.send(500);
-						console.log(error);
 					}else{
 						req.session.error = '用户名创建成功！ ';
 						res.send(200);

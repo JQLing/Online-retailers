@@ -1,59 +1,60 @@
 
 module.exports = function(app){
-	 app.get('/details', function(req, res) {
+	 app.get('/details', function(req, res){
         res.render('details');
-    });
-    app.post('/details', function (req, res) {
+     });   
+     app.post('/details', function (req, res) {
 		if(!req.session.user){
 			req.session.error ="请重新登录";
 			res.redirect('/login');
-			
 		}else{
-			var Commodity = global.dbHelper.getModel('commodity');
 			var Cart = global.dbHelper.getModel('cart');
-			var creatComm = 0;
-			var creatCart = 0;
-			var flag = creatComm & creatCart;
+			var num = req.body.num * 1;
+			var price = req.body.price * 1;
 			
-			Commodity.create({
-				shopName: req.body.shopName,
-				goodName: req.body.goodName,
-				size: req.body.size,
-				color: req.body.color,
-				imgSrc: req.body.imgSrc,
-				price: req.body.price,
-				num: req.body.num
-			}, function (error, doc) {
-				if (doc) {
-					creatComm = 1; 
+			req.session.goodNum = req.body.num;
+			req.session.sum = req.body.money;
+			
+			Cart.findOne({'uId':req.session.user._id,'shopName': req.body.shopName,'goodName':req.body.goodName,'size':req.body.size,'color':req.body.color,'imgSrc': req.body.imgSrc,'price':req.body.price},function(error,doc){//商品已存在 +num(商品数量)
+				if(doc){
+					
+					Cart.update({'uId': req.session.user._id,'shopName': req.body.shopName,'goodName':req.body.goodName,'size':req.body.size,'color':req.body.color,'imgSrc': req.body.imgSrc,'price':req.body.price},
+								{$set: {quantity: doc.quantity + num,money: doc.money + num * price
+					}},function(error,doc){
+						if(doc){
+							res.send(200);
+							console.log('更新成功：' + doc);
+						}else{
+							res.send(500);
+							console.log('更新失败');
+						}
+					});
 				}else{
-					res.send(404);
+					Cart.create({
+						uId: req.session.user._id,
+						shopName: req.body.shopName,
+						goodName: req.body.goodName,
+						size: req.body.size,
+						color: req.body.color,
+						imgSrc: req.body.imgSrc,
+						price: req.body.price,
+						quantity: req.body.num,
+						money: req.body.money
+					}, function (error, doc) {
+						if (doc) {
+							res.send(200);
+						}else{
+							res.send(404);
+						}
+					});
 				}
 			});
-			Cart.create({
-				uId: req.session.user._id,
-				cId: req.session.commodity._id,
-				cName: req.body.goodName,
-				cShopName: req.body.shopName,
-				cSize: req.body.size,
-				cColor: req.body.color,
-				cImgSrc: req.body.imgSrc,
-				cPrice: req.body.price,
-				cQuantity: req.body.num 
-			},function(error, doc){
-				if (doc) {
-					creatCart = 1;
-					flag = creatComm & creatCart; 
-					if(flag){
-						res.send(200);
-					}else{
-						res.send(404);
-					}
-				}else{
-					res.send(404);
-				}
-			});
+			
+			
 		}
 		
     });
+	
+
+	
 };

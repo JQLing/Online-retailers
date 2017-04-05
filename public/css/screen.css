@@ -70,6 +70,11 @@
     width: 180px;
     margin-top: 16px;
 }
+.category_title{
+	position: relative;
+	width: 180px;
+	height: 16px;
+}
 .category_title a{
     color: #000;
 }
@@ -81,11 +86,14 @@
     background: url(../images/screen.png) no-repeat -98px -98px;
 }
 .more{
+	position: absolute;
+	right: 0;
+	top: 0px;
     display: block;
     width: 28px;
     height: 16px;
     padding-left: 16px;
-    background: url(../images/screen.png) no-repeat 0px -13px ;
+    background: url(../images/screen.png) no-repeat 0px -13px;
 }
 .category_item{
     margin-top: 8px;
@@ -143,7 +151,7 @@
 .choose_price{
 	width: 86px;
 }
-.price{
+.select_price{
 	width: 42px;
 	height: 24px;
 	border-right: 1px solid #ccc;
@@ -427,10 +435,11 @@
 }
 .discPrice{
 	font-size: 15px;
-	color: #f10215;
+	
 }
-.tb_rmb{
+.tb_rmb,.zkprice{
 	font-style: normal;
+	color: #f10215;
 }
 .originalPrice{
 	font-size: 9px;

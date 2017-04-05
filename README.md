@@ -1,6 +1,6 @@
 # Online-retailers
 自己写的一个电商系统，涉及到前后台。
-前台js部分使用 jQuery 框架，表单部分用了 AngularJs 验证
+前台js部分使用 jQuery 框架，表单部分用了 AngularJs 验证。
 后台使用 NodeJs + Express + Mongodb + Mongoose 技术。
 
 

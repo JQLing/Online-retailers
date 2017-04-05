@@ -44,12 +44,13 @@ app.use(function(req,res,next){
 	var err = req.session.error; //保存结果响应信息
 	res.locals.message = ''; //保存html标签
 	if(err){
-		res.locals.message= '<div style="margin-bottom: 20px;color:red;">' + err + '</div>';
+		res.locals.message= '<div style="margin-bottom:10px;color:red;">' + err + '</div>';
 	}
 	next();
 });
 
 routes(app);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

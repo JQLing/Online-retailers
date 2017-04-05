@@ -5,9 +5,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" style="text/css">
     <link rel="stylesheet" href="css/common.css" style="text/css">
+    <link rel="stylesheet" href="css/style.css" style="text/css">
     <link rel="stylesheet" href="css/screen.css" type="text/css">
 </head>
 <body>
+   <%- include common/header %>
     <div class="topNav clearfix">
         <ul class="has_arrow fl">
             <li><a href="#">所有分类 > </a></li>
@@ -29,7 +31,7 @@
                 <dl class="category">
                     <dt class="category_title">
                         <a href="#">尺码<span class="cate"></span></a>
-                        <a href="#" class="more fr">更多</a>
+                        <a href="#" class="more">更多</a>
                     </dt>
                     <dd class="category_item"><input type="checkbox" name="material"><a href="#">XL</a></dd>
                     <dd class="category_item"><input type="checkbox" name="material"><a href="#">M</a></dd>
@@ -43,7 +45,7 @@
                 <dl class="category">
                     <dt class="category_title">
                         <a href="#">选购热点<span class="cate"></span></a>
-                        <a href="#" class="more fr">更多</a>
+                        <a href="#" class="more">更多</a>
                     </dt>
                     <dd class="category_item"><input type="checkbox" name="material"><a href="#">修身显瘦</a></dd>
                     <dd class="category_item"><input type="checkbox" name="material"><a href="#">纸质淑女</a></dd>
@@ -70,7 +72,7 @@
                 <dl class="category">
                     <dt class="category_title">
                         <a href="#">风格<span class="cate"></span></a>
-                        <a href="#" class="more fr">更多</a>
+                        <a href="#" class="more">更多</a>
                     </dt>
                     <dd class="category_item"><input type="checkbox" name="material"><a href="#">淑女</a></dd>
                     <dd class="category_item"><input type="checkbox" name="material"><a href="#">休闲</a></dd>
@@ -103,7 +105,7 @@
                 <dl class="category">
                     <dt class="category_title">
                         <a href="#">品牌<span class="cate"></span></a>
-                        <a href="#" class="more fr">更多</a>
+                        <a href="#" class="more">更多</a>
                     </dt>
                     <dd class="category_item"><input type="checkbox" name="material"><a href="#">百诗堡</a></dd>
                     <dd class="category_item"><input type="checkbox" name="material"><a href="#">稻草朵</a></dd>
@@ -125,8 +127,8 @@
                         <a href="#" class="sort">价格<div class="arrow twoArrow fr"></div></a>
                     </div>
                     <div class="filter_component choose_price fl clearfix">
-                    	<input type="text" class="price fl" value="¥ ">
-                    	<input type="text" class="price fl" value="¥ ">
+                    	<input type="text" class="select_price fl" value="¥ ">
+                    	<input type="text" class="select_price fl" value="¥ ">
                     </div>
                     <div class="filter_component sel_ck fl">
                     	<p class="origin fl"><input type="checkbox" name="origin" checked><a href="#" class="origin_txt">大陆段包邮</a></p>

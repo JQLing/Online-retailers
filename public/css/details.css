@@ -332,6 +332,9 @@
 .promo_price{
 	color: #ae9999;
 }
+.promo_price .tb_rmb{
+	color: #c40000;
+}
 .promo_price .originalPrice{
 	font-size: 22px;
 	color: #c40000;

@@ -11,12 +11,12 @@ $(function(){
 				data: data,
 				success: function(data,status){
 					if(status == 'success'){
-						location.href = './home';
+						location.href = 'home';
 					}
 				},
 				error:function(data,status){
 					if(status == 'error'){
-						location.href='./login';
+						location.href='login';
 					}
 				}
 			});

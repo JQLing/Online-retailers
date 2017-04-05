@@ -1,5 +1,10 @@
 module.exports= function(app){
-	app.post('/order',function(req,res){
-		res.render('order',{sum:req.body.sum});
+	app.get('/order',function(req,res){
+		if(req.session.user){
+			res.render('order',{goodNum:req.session.goodNum,sum:req.session.sum});
+		}else{
+			res.redirect('/login');
+		}
+		
 	});
 };

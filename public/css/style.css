@@ -27,8 +27,12 @@ header .bar a{
 header .bar a:hover,header .bar .active{
     color: #f10215;
 }
+.other_info{
+	height: 35px;
+}
 .personInfo{
     width: 400px;
+	height: 35px;
 }
 .cart{
     display: inline-block;

@@ -45,14 +45,14 @@ $(function(){
 			else if(t>$(this).outerHeight()-aMove.eq(index).outerHeight()){
 				t=$(this).outerHeight()-aMove.eq(index).outerHeight();
 			}
-			aMove.eq(index).offset({left:l+170,top:t+260});
+			aMove.eq(index).offset({left:l+170,top:t+395});
 			
 			var percentX=l/$(this).outerWidth();
 			var percentY=t/$(this).outerHeight();
 			var lPic = -percentX * (aPic.eq(index).outerWidth());
 			var tPic = -percentY * (aPic.eq(index).outerHeight());
 			
-			aPic.eq(index).offset({left:lPic+598,top:tPic+260}); 
+			aPic.eq(index).offset({left:lPic+598,top:tPic+395}); 
 		});
 	})();
 // 选项卡切换
@@ -90,7 +90,8 @@ $(function(){
 		var oSize = null;
 		var oColor = null;
 		var oImgSrc = null;
-		var oNum = parseFloat($('#buy_num').val());
+		var oNum = parseFloat($('#buy_num').val());   
+		var money = 0;     //金额
 		
 		var data = {
 			shopName: oShopName,
@@ -99,7 +100,8 @@ $(function(){
 			color: oColor,
 			imgSrc: oImgSrc,
 			price: oPrice,
-			num: oNum
+			num: oNum,
+			money: money
 		};
 		
 		var aSize = $('.size_item');
@@ -146,12 +148,13 @@ $(function(){
 			}else{
 				return false;
 			}
-			$('#buy_num').val(oNum)
+			$('#buy_num').val(oNum);
 			oNum=parseFloat($('#buy_num').val());
 		});
 		
 		// 加入购物车
 		oShopingCart.click(function(){
+			money = oPrice * oNum ;
 			data = {
 				shopName: oShopName,
 				goodName: oGoodName,
@@ -159,7 +162,8 @@ $(function(){
 				color: oColor,
 				imgSrc: oImgSrc,
 				price: oPrice,
-				num: oNum
+				num: oNum,
+				money: money
 			};
 			if(flag){
 				$.ajax({
@@ -169,6 +173,7 @@ $(function(){
 					success: function(data,status){
 						if(status == 'success'){
 							alert('添加成功！');
+							location.reload();
 						}
 					},
 					error: function(data,status){
@@ -178,8 +183,10 @@ $(function(){
 			}
 						
 		});
+		
 		// 立即购买
 		oBuyNow.click(function(){
+			money = oPrice * oNum ;
 			data = {
 				shopName: oShopName,
 				goodName: oGoodName,
@@ -187,7 +194,8 @@ $(function(){
 				color: oColor,
 				imgSrc: oImgSrc,
 				price: oPrice,
-				num: oNum
+				num: oNum,
+				money: money
 			};
 			if(flag){
 				$.ajax({
@@ -196,7 +204,7 @@ $(function(){
 					data: data,
 					success: function (data, status) {
 						if (status == 'success') {
-							location.href = './cart';
+							location.href = 'order';
 						}
 					},
 					error: function (data, status) {
@@ -210,5 +218,4 @@ $(function(){
 	})();
 		
 
-	
 });

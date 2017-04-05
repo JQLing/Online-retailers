@@ -15,11 +15,11 @@ $(function(){
 				success: function(data,status){
 					if(status == 'success'){
 					//当注册成功时就可以跳转到登陆页面了
-						location.href='./login';
+						location.href='login';
 					}
 				},
 				error: function(res,err){
-					location.href='./register';
+					location.href='register';
 				}
 			});
 		});
