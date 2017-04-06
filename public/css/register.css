@@ -1,6 +1,6 @@
 .register{
 	width: 302px;
-	height: 396px;
+	height: 420px;
 	padding: 27px 24px;
 	margin: 0 auto;
 	background-color: #fff;
@@ -12,13 +12,12 @@
 	font-weight: 700;
 }
 .register_form{
-	width: px;
+	width: 330px;
 }
 .register_username,.register_pwd{
-	width: 298px;
-	height: 40px;
-	
-	margin-bottom: 20px;
+	width: 330px;
+	height: 80px;
+	line-height: 40px;
 }
 .username_txt,.pwd_txt{
 	width: 60px;
@@ -28,16 +27,25 @@
 
 .register_text{
 	display: block;
-	width: 216px;
-	height: 38px;
+	width: 200px;
+	height: 18px;
 	padding: 10px;
 	border: 1px solid #dddddd;
 	background-color: #fff;
 	font-size: 12px;
 }
+.test{
+	width: 200px;
+	height: 40px;
+	margin-left: 60px;
+}
 .agreement{
 	width: 280px;
-	margin: 46px 0 20px 30px;
+	height: 20px;
+	margin: 40px 0 20px 30px;
+}
+.agreement_radio{
+	margin: 2px 6px;
 }
 .agreement_book{
 }
