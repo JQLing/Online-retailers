@@ -306,69 +306,7 @@
 /*翻页*/
 .pages{
 	height: 34px;
-	margin: 35px 0 0 127px;
-}
-.previous,.last{
-	width: 76px;
-	height: 34px;
-	border: 1px solid #ccc;
-	border-right: #fff;
-	line-height: 34px;
-	text-align: center;
-}
-.last{
-	border-right: 1px solid #ccc;
-/*	border-left: #fff;*/
-}
-.pre_btn,.last_btn{
-	display: block;
-	color: #666;
-}
-.page_nums{
-	width: 180px;
-	height: 34px;
-}
-.page_num_list{
-	width: 35px;
-	height: 34px;
-	border: 1px solid #ccc;
-	border-right: #fff;
-	line-height: 34px;
-	text-align: center;
-}
-.page_num_list:last-child{
-	border-right: #ccc;
-}
-.page_num_item{
-	display: block;
-	color: #666;
-}
-.page_nums .active{
-	background: #ff6600;
-	color: #fff;
-}
-.page_num_item:hover,.last:hover{
-	background: #ffeee5;
-	color: #ff6600;
-	border: 1px solid #ff6600;
-}
-.text{
-	margin: 8px 0 0 21px;
-	color: #9d9d9d;
-}
-.enterNum{
-	width: 30px;
-	height: 18px;
-	border: 1px solid #999999;
-	text-align: center;
-	color: #9d9d9d;
-}
-.ok{
-	width: 46px;
-	height: 22px;
-	background: #ff4400;
-	color: #fff;
-	cursor: pointer;
+	margin: 35px 0 0 20px;
 }
 /*右侧推荐*/
 .result_recom{

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/common.css" style="text/css">
     <link rel="stylesheet" href="css/style.css" style="text/css">
     <link rel="stylesheet" href="css/screen.css" type="text/css">
+    <link rel="stylesheet" href="css/kkpager_orange.css" type="text/css">
 </head>
 <body>
    <%- include common/header %>
@@ -147,7 +148,7 @@
                     	<a href="#" class="rightArrow fr"></a>
                     </div>
                 </div>
-                <ul class="screen_result clearfix">
+                <ul class="screen_result clearfix show">
                 	<li class="result_list fl">
                 		<a href="./details" class="list_item"><img class="list_pic" src="images/screen/item1.jpg" alt=""></a>
                 		<div class="priceBar fr">
@@ -773,27 +774,636 @@
                     	</div>
                 	</li>
                 </ul>
-                <div class="pages clearfix">
-                	<div class="previous fl">
-                		<a href="#" class="pre_btn">上一页</a>
-                	</div>
-                	<ul class="page_nums fl">
-                		<li class="page_num_list fl"><a href="#" class="page_num_item active">1</a></li>
-                		<li class="page_num_list fl"><a href="#" class="page_num_item">2</a></li>
-                		<li class="page_num_list fl"><a href="#" class="page_num_item">3</a></li>
-                		<li class="page_num_list fl"><a href="#" class="page_num_item">4</a></li>
-                		<li class="page_num_list fl"><a href="#" class="page_num_item">5</a></li>
-                	</ul>
-                	<div class="last fl">
-                		<a href="#" class="last_btn">下一页</a>
-                	</div>
-                	<p class="text fl">
-						<span class="">... 共100页 到第</span> 
-						<input type="text" class="enterNum" value="2"> 页 
-						<input type="button" class="ok" value="确定">
-					</p>
-                </div>
+                <ul class="screen_result clearfix hide">
+                	<li class="result_list fl">
+                		<a href="./details.html" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a href="./details.html" class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                	<li class="result_list fl">
+                		<a href="#" class="list_item"><img class="list_pic" src="images/screen/item2.jpg" alt=""></a>
+                		<div class="priceBar fr">
+							<span class="discPrice">
+								<i class="tb_rmb">¥ </i>
+								<b class="zkprice">149.00 </b>
+							</span>
+							<p class="sales fr">
+								销量 <a class="salesVolume" href="#">93</a> 
+							</p>
+                     	</div>
+                    	<a class="result_list_title">米莱达 2017夏装新款女装 时尚高腰背心裙子 纯色无袖连衣裙 女</a>
+                    	<div class="shopAddress clearfix">
+                    		<div class="shopIcon fl">
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    			<div class="line"></div>
+                    		</div>
+                    		<a href="#" class="shopName fl">米莱达旗舰店</a>
+                    		<span class="address fr">浙江 杭州</span>
+                    	</div>
+                    	<div class="icons clearfix">
+                    		<a href="#" class="icon_gold fl" title="金牌卖家"></a>
+                    		<a href="#" class="icon_customService fr" title="客服"></a>
+                    	</div>
+                	</li>
+                </ul>
             </div>
+            <div class="pages">
+                <div id="kkpager"></div>
+			</div>
         </div>
         <dl class="result_recom fl">
                 <dt class="recom_title">掌柜热卖<div class="ad fr">广告</div></dt>
@@ -883,7 +1493,46 @@
                 </dd>
             </dl>
     </div>
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/screen.js"></script>
+    <script src="js/kkpager.min.js"></script>
+    <script>
+		function getParameter(name) { 
+			var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); 
+			var r = window.location.search.substr(1).match(reg); 
+			if (r!=null) return unescape(r[2]); {return null;}
+		}
+		
+		$(function(){
+			var totalPage = 20;
+			var totalRecords = 390;
+			var pageNo = getParameter('pno');
+			var aUl = $('.screen_result');
+			
+			if(!pageNo){
+				pageNo = 1;
+			}
+			//生成分页
+			kkpager.generPageHtml({
+				//当前页码
+				pno : pageNo,
+				//总页码
+				total : totalPage,
+				//总数据条数
+				totalRecords : totalRecords,
+				mode : 'click',//默认值是link，可选link或者click
+				click : function(n){
+					// do something
+					//手动选中按钮
+					
+					this.selectPage(n);
+					
+					aUl.eq(n-1).addClass('show').removeClass('hide').siblings('ul').removeClass('show').addClass('hide');
+					
+					return false;
+				}
+			});
+		});
+	</script>
 </body>
 </html>
