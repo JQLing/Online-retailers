@@ -33,6 +33,8 @@ app.use(multer({dest:'./uploads/'}).array('multiInputFileName'));
 
 //Handle Express Sessions
 app.use(session({
+	resave: false,          
+	saveUninitialized: true,  
 	secret: 'what do you want to do',
 	cookie:{
 		maxAge: 31*60*60*24
